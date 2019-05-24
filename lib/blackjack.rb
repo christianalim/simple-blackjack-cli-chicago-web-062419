@@ -43,7 +43,9 @@ def hit?(number)
   # code hit? here
   prompt_user
   if get_user_input == 'h'
-    initial_round
+    deal_card
+  elsif get_user_input == 's'
+    hit?(number)
   end
 end
 
